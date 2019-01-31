@@ -30,7 +30,9 @@ helm delete postgres
 
 Redis via HELM
 ```
+# install
 helm install stable/redis --name redis
+# open shell
 kubectl exec -it `kubectl get po | grep redis-slave | cut -f1 -d' '` redis-cli
 ```
 
