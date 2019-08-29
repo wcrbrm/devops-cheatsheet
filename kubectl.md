@@ -37,5 +37,8 @@ kubectl get secrets --all-namespaces -o json | kubectl replace -f -
 # port-forward:
 kubectl port-forward --namespace default svc/my-rabbit 5672:5672
 
+# nodes:
+kubectl get nodes
+kubectl get nodes -o yaml
 ```
 
