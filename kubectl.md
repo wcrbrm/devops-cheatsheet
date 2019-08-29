@@ -33,5 +33,9 @@ kubectl delete ds,rs,svc,deploy,po,rc --all
 
 # re-encrypt all secrets
 kubectl get secrets --all-namespaces -o json | kubectl replace -f -
+
+# port-forward:
+kubectl port-forward --namespace default svc/my-rabbit 5672:5672
+
 ```
 
